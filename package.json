@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test:smoke": "jest tests/config.test.js",
+    "test:smoke": "jest tests/config.test.js"
   },
   "repository": {
     "type": "git",
