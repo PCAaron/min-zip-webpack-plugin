@@ -1,4 +1,4 @@
-# min-zip-webpack-plugin
+# min-zip-webpack-plugin![ ](https://travis-ci.org/PCAaron/min-zip-webpack-plugin.svg?branch=master)
 Webpack plugin to zip up emitted files.     
 
 ## How to use? 
