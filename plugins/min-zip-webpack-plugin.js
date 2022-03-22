@@ -14,7 +14,8 @@ class MinZipWebpackPlugin{
 
         compiler.hooks.emit.tapAsync('MinZipWebpackPlugin', (compilation,callback)=>{
             // zip.folder,创建目录名称
-            const folder = zip.folder(this.options.filename);
+            // sometimes we don't want the .zip file to be created with a root folder
+            const folder = this.options.noRootFolder ? zip : zip.folder(this.options.filename);
             // 遍历compilation.assets对象
             for(let filename in compilation.assets){
                 // 获取source
